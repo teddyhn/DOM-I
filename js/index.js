@@ -104,3 +104,21 @@ emailContact.textContent = siteContent["contact"]["email"]
 
 let copyright = document.querySelector("footer p");
 copyright.textContent = siteContent["footer"]["copyright"]
+
+// Task 3
+let newNavItem = document.createElement('a');
+newNavItem.textContent = "Home";
+
+let newNavItemTwo = document.createElement('a');
+newNavItemTwo.textContent = "Terms";
+
+let nav = document.querySelector('nav');
+nav.appendChild(newNavItemTwo);
+nav.prepend(newNavItem);
+
+
+// Stretch Goal
+let h4 = document.querySelectorAll('h4');
+h4.forEach(element => {
+  element.style.fontSize = '150%';
+})
